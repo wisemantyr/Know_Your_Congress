@@ -1,6 +1,5 @@
 attrs==19.3.0
 backcall==0.1.0
-bleach @ file:///home/conda/feedstock_root/build_artifacts/bleach_1588608214987/work
 boto3==1.14.0
 botocore==1.17.0
 brotlipy==0.7.0
@@ -15,7 +14,6 @@ cryptography==2.9.2
 cycler==0.10.0
 decorator==4.4.2
 defusedxml==0.6.0
-Deprecated @ file:///home/conda/feedstock_root/build_artifacts/deprecated_1589409885623/work
 descartes==1.1.0
 docutils==0.15.2
 entrypoints==0.3
