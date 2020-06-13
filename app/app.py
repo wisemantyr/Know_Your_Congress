@@ -1,5 +1,5 @@
 # import libraries
-from flask import Flask, jsonify
+from flask import Flask, render_template, jsonify
 import pymongo
 import requests
 import json
