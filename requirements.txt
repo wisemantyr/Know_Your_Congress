@@ -19,7 +19,6 @@ docutils==0.15.2
 entrypoints==0.3
 Fiona==1.8.13
 Flask==1.1.2
-geographiclib==1.50
 geopy @ file:///home/conda/feedstock_root/build_artifacts/geopy_1589314920058/work
 gmaps==0.9.0
 gunicorn==20.0.4
