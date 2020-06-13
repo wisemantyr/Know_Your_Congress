@@ -7,8 +7,8 @@ import json
 app = Flask(__name__)
 
 # setup mongo connection
-conn = mongo_conn
-client = pymongo.MongoClient(mongo_conn)
+conn = "mongodb+srv://heroku_user:heroku_user@cluster0-anhwr.mongodb.net/congress_db?retryWrites=true&w=majority"
+client = pymongo.MongoClient(conn)
 
 @app.route("/")
 def index():
