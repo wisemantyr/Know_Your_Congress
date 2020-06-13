@@ -19,7 +19,6 @@ docutils==0.15.2
 entrypoints==0.3
 Fiona==1.8.13
 Flask==1.1.2
-GDAL==3.0.4
 geographiclib==1.50
 geojson==2.5.0
 geopandas==0.7.0
