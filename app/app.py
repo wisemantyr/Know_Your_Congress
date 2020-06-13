@@ -1,9 +1,8 @@
 # import libraries
-from flask import Flask, render_template, redirect, jsonify
+from flask import Flask, jsonify
 import pymongo
 import requests
 import json
-from config import key
 
 app = Flask(__name__)
 
