@@ -1,5 +1,4 @@
 import requests
-from config import key
 import pymongo
 import json
 
@@ -10,7 +9,7 @@ def build_mongo_db ():
 
     #get json from votes URL
     votes_url = "https://api.propublica.org/congress/v1/house/votes/recent.json"
-    votes_r = requests.get(votes_url, headers={"X-API-Key": key})
+    votes_r = requests.get(votes_url, headers={"X-API-Key": congress_key})
     votes_json = votes_r.json()
     votes_json
     
@@ -22,7 +21,7 @@ def build_mongo_db ():
 
     #get json from members URL
     members_url = "https://api.propublica.org/congress/v1/116/house/members.json"
-    members_r = requests.get(members_url, headers={"X-API-Key": key})
+    members_r = requests.get(members_url, headers={"X-API-Key": congress_key})
     members_json = members_r.json()
     members_json
     congress_members = members_json['results'][0]["members"] #isolate members into a list of objects
@@ -37,7 +36,7 @@ def build_mongo_db ():
             try:
                 #use member ID to create office expenses query URL and get json
                 expense_url = f"https://api.propublica.org/congress/v1/members/{mem_id}/office_expenses/category/total.json"
-                expense_r = requests.get(expense_url, headers={"X-API-Key": key})
+                expense_r = requests.get(expense_url, headers={"X-API-Key": congress_key})
                 expense_json = expense_r.json()
                 
                 #create "office_totals" key in member object and set value to desired result from query

@@ -1,5 +1,5 @@
 
-mapboxgl.accessToken = MAP_API;
+mapboxgl.accessToken = mapboxKey;
 
 var map = new mapboxgl.Map({
   container: 'map', // HTML container ID
