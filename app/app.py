@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 # setup mongo connection
 conn = mongo_conn
-client = pymongo.MongoClient(conn)
+client = pymongo.MongoClient(mongo_conn)
 
 @app.route("/")
 def index():
