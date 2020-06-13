@@ -1,9 +1,10 @@
 import requests
 import pymongo
 import json
+from app.config import congress_key
 
 def build_mongo_db ():
-    conn = 'mongodb://localhost:27017' # Create connection variable
+    conn = 'mongodb+srv://wisemantyr:psswrd!!@cluster0-anhwr.mongodb.net/test' # Create connection variable
     client = pymongo.MongoClient(conn)  # Pass connection to the pymongo instance.
     db = client.congress_db  # create/connect to db
 

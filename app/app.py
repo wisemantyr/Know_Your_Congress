@@ -7,7 +7,7 @@ import json
 app = Flask(__name__)
 
 # setup mongo connection
-conn = "mongodb://localhost:27017"
+conn = mongo_conn
 client = pymongo.MongoClient(conn)
 
 @app.route("/")
