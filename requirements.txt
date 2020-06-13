@@ -1,5 +1,4 @@
 attrs==19.3.0
-autopep8 @ file:///home/conda/feedstock_root/build_artifacts/autopep8_1591017828430/work
 backcall==0.1.0
 bleach @ file:///home/conda/feedstock_root/build_artifacts/bleach_1588608214987/work
 boto3==1.14.0
