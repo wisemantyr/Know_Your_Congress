@@ -71,7 +71,6 @@ Send2Trash==1.5.0
 Shapely==1.7.0
 terminado==0.8.3
 testpath==0.4.4
-threadpoolctl @ file:///tmp/tmp79xdzxkt/threadpoolctl-2.1.0-py3-none-any.whl
 toml @ file:///home/conda/feedstock_root/build_artifacts/toml_1589469402899/work
 tornado==6.0.4
 traitlets==4.3.3
