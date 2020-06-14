@@ -4,8 +4,8 @@ import json
 from app.config import congress_key
 
 def build_mongo_db ():
-    conn = 'mongodb+srv://wisemantyr:psswrd!!@cluster0-anhwr.mongodb.net/test' # Create connection variable
-    client = pymongo.MongoClient(conn)  # Pass connection to the pymongo instance.
+    MONGODB_URI = 'mongodb+srv://wisemantyr:psswrd!!@cluster0-anhwr.mongodb.net/test' # Create connection variable
+    client = pymongo.MongoClient(MONGODB_URI)  # Pass connection to the pymongo instance.
     db = client.congress_db  # create/connect to db
 
     #get json from votes URL
