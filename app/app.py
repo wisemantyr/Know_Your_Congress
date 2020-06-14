@@ -4,6 +4,7 @@ import pymongo
 import requests
 import json
 
+
 app = Flask(__name__)
 
 # setup mongo connection
@@ -12,7 +13,7 @@ client = pymongo.MongoClient(conn)
 
 @app.route("/")
 def index():
-    return render_template('index.html', db=db)
+    return render_template('index.html')
 
 @app.route("/members", methods=['GET'])
 def get_members():
