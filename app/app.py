@@ -12,12 +12,11 @@ client = pymongo.MongoClient(conn)
 
 @app.route("/")
 def index():
-    db = client.congress_db
     return render_template('index.html', db=db)
 
 @app.route("/members", methods=['GET'])
 def get_members():
-    db = client.congress_db #connect to database
+    db = client.get_database('congress_db') #connect to database
     members_data = db.members.find() #get members collection data
 
     response = [] #initialize list of data to jsonify
@@ -29,7 +28,7 @@ def get_members():
 
 @app.route("/votes", methods=['GET'])
 def get_votes():
-    db = client.congress_db #connect to database
+    db = client.get_database('congress_db') #connect to database
     votes_data = db.votes.find() #get votes collection data
     
     response = [] #initialize list of data to jsonify
