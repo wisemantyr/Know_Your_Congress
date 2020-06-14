@@ -46,7 +46,7 @@ Files to include in .gitignore:
 Files needed:
   - config.py in the same directoy as app.py with ProPublica Congress API key as a variable named "key" (get here: https://projects.propublica.org/api-docs/congress-api/)
 
-To run the flask app simply run the app.py script in the main directory.
+To run the flask app simply run the app.py script in the app directory.
 
 The mongo database is hosted using on Mongo Atlas. If you would like a local copy of the database run the buildDB.py script in the main directory.
 
